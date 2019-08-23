@@ -26,12 +26,13 @@ class Song
 
   def self.genre_count
     genre_count={}
-    @@genres.map |x|
+    @@genres.map do |x|
     if genre_count[x]
       genre_count[x]+=1
     else
       genre_count[x]=1
     end
+  end
   end
 
   def self.artist_count
