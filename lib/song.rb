@@ -17,7 +17,7 @@ class Song
   end
 
   def self.artists
-    
+    if @@artists
   end
 
   def self.genres
