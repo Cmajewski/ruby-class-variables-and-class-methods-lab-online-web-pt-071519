@@ -8,10 +8,7 @@ class Song
     @artist=artist
     @genre=genre
     @@count+=1
-    if @@genres.include?(genre)
-    else
-      @@genres<<genre
-    end
+    @@genres<<genre
     @@artists<<artist
   end
 
